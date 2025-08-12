@@ -1,8 +1,11 @@
 import QtQuick
 
 Window {
-    width: 640
-    height: 480
+    width: 800
+    height: 1000
     visible: true
-    title: qsTr("Hello World")
+    title: qsTr("My QML")
+
+    x: 600
+    y: 600
 }

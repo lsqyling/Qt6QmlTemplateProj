@@ -15,6 +15,7 @@ set(target_name appQmlDemo)
 qt_add_executable(${target_name}
     main.cpp
 )
+target_compile_definitions(${target_name} PRIVATE QT_QML_DEBUG)
 
 qt_add_qml_module(${target_name}
     URI QmlDemo
