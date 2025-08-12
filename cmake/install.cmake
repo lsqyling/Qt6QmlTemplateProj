@@ -1,0 +1,6 @@
+
+install(TARGETS ${target_name}
+        BUNDLE DESTINATION .
+        LIBRARY DESTINATION installed/${CMAKE_INSTALL_LIBDIR}
+        RUNTIME DESTINATION installed/${CMAKE_INSTALL_BINDIR}
+)
