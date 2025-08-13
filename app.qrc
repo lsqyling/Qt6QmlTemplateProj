@@ -1,0 +1,16 @@
+<RCC>
+	<qresource prefix="/demo">
+		<file>images/beauty.jpg</file>
+		<file>images/benben.jpg</file>
+		<file>images/cow.jpg</file>
+		<file>images/dinosaur.jpg</file>
+		<file>images/dog.gif</file>
+		<file>images/dog.jpg</file>
+		<file>images/linux_mascot.jpeg</file>
+		<file>images/panda.jpg</file>
+		<file>images/rabbit_cartoon.jpeg</file>
+		<file>images/rabbit_flower.jpeg</file>
+		<file>images/rabbit_single.jpeg</file>
+		<file>images/wolf.jpg</file>
+	</qresource>
+</RCC>

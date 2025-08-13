@@ -13,17 +13,23 @@ find_package(Qt6 6.5 REQUIRED COMPONENTS Quick)
 
 qt_standard_project_setup(REQUIRES 6.5)
 
+# load resources
+qt_add_resources(SOURCES app.qrc)
+
+
 set(target_name appQmlDemo)
 qt_add_executable(${target_name}
-    main.cpp
+        main.cpp ${SOURCES}
 )
 
+# load qml files
 file(GLOB_RECURSE qml_files  RELATIVE ${CMAKE_CURRENT_LIST_DIR} CONFIGURE_DEPENDS qml/*.qml)
 qt_add_qml_module(${target_name}
     URI QmlDemo
     VERSION 1.0
     QML_FILES ${qml_files}
 )
+
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
