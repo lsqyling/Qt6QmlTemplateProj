@@ -36,4 +36,4 @@ development experience than Qt Creator. If you like it, give it a star!
 5. `qmlformat.exe`
 
 
-<img src="readme.png">
+<img src=".readme.png">
