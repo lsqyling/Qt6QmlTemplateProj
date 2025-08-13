@@ -28,3 +28,12 @@ set(CMAKE_PREFIX_PATH  D:/dev/tools/Qt/6.5.2/msvc2019_64)
 > Build your own app on this foundation. Get familiar with the Qt6 development toolchain based on CMake—enjoy a better 
 development experience than Qt Creator. If you like it, give it a star!
 
+## 提升效率的工具
+1. `design.exe`
+2. `uic.exe`
+3. [`.qrc 文件生成工具`](https://github.com/lsqyling/Qt-qrc-creator)
+4. `qml.exe`
+5. `qmlformat.exe`
+
+
+<img src="readme.png">
