@@ -9,7 +9,7 @@ set(CMAKE_PREFIX_PATH  D:/dev/tools/Qt/6.5.2/msvc2019_64)
 
 include(cmake/compile_options.cmake)
 
-find_package(Qt6 6.5 REQUIRED COMPONENTS Quick)
+find_package(Qt6 REQUIRED COMPONENTS Quick Charts)
 
 qt_standard_project_setup(REQUIRES 6.5)
 
@@ -18,8 +18,17 @@ qt_add_resources(SOURCES app.qrc)
 
 
 set(target_name appQmlDemo)
+set(cpp_files
+        main.cpp
+        myobject.hpp
+        myobject.cpp
+        mylistmodel.hpp
+        mylistmodel.cpp
+        mydebugmsg.hpp
+        mydebugmsg.cpp
+)
 qt_add_executable(${target_name}
-        main.cpp ${SOURCES}
+        ${cpp_files} ${SOURCES}
 )
 
 # load qml files
@@ -42,7 +51,7 @@ set_target_properties(${target_name} PROPERTIES
 )
 
 target_link_libraries(${target_name}
-    PRIVATE Qt6::Quick
+    PRIVATE Qt6::Quick Qt6::Charts
 )
 
 include(cmake/qt6_runtime_dependency.cmake)
